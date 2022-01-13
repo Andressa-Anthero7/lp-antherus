@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+	<!-- Bootstrap-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	<!-- Fontawesome CSS -->
+    <script src="https://kit.fontawesome.com/a69cec9c91.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" />
+
+	<title>Antherus</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+
+
+		.jewel{
+			background-color: #4717f6;
+		}
+
+		.stark{
+			color: #e7dfdd;
+		}
+
+		.fuschia{
+			background: #a239ca;
+		}
+
+		.azul{
+			background: #17ead9;
+		}
+
+		#bg-icon{
+			background-color: #0E0816;
+		}
+
+		.void{
+			background-color: #0e0816;
+		}
+
+		#bg-display{
+			background-image: url(img/bg-degrade.gif);
+		}
+
+		#bg-terra{
+			background-image: url(fundo-terra.gif);
+		}
+
+
+		#insta {
+                background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 0%, #fd5949 20%, #d6249f 60%, #285AEB 90%);
+                -webkit-background-clip: text;
+                /* Also define standard property for compatibility */
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+  
+               
+
+                border-color: black;
+  
+            }
+
+        #whatsapp-color{
+        	color: #34af23;
+        }
+
+        #fb-color{
+        	color: #3b5998;
+        }
+
+        #rodape{
+        	font-size: 2em;
+        }
+
+        .form{
+        	position: absolute;
+		   top: 150px;
+		   right:200px;
+		   color: white;
+	   }
+
+	   .form-responsivo{
+	   		position: absolute;
+		   top: 100px;
+		   right:100px;
+		   
+		   color: white;  
+	   }
+
+	   .form-input{
+	   	font-style:heavy;
+	   	color: black;
+	   	text-align: center;
+	   }
+
+	   .footer{
+	   	position: absolute;
+	   	bottom: -200px;
+
+	   }
+
+	   label{
+	   	display: block;
+	   	font-style: bold;
+	   }
+
+	   @media (max-width: 600px) {
+    		body {
+        		background-image: url(fundo-terra-responsivo4.gif);
+    		}
+		}
+
+		@media (min-width: 600px) {
+    		body {
+        		background-image: url(fundo-terra.gif);
+
+    		}
+		}
+
+
+	</style>
+</head>
+<body class=" w-auto " style="width:100%; " id="">
+	<div  class="row container-fluid" >
+		<div class="">
+			<div class="">
+
+			<! -- Barra de navegação -->
+				<nav class="navbar navbar-expand-lg navbar-dark px-0 py-2 ">
+
+
+					<!--Logo Marca Acima de XS-->
+					<div class="navbar-brand  px-5 ml-3 pb-1  d-none d-sm-block " >
+						<img src="logo8.png" class="mx-auto p-0   "  >
+					</div>
+
+					<!--Logo Marca Responsivo XS-->
+					<div class="navbar-brand d-block d-sm-none p-0 m-0 " >
+						<img src="logo8.png" class="  img img-fluid "  >
+					</div>
+
+		<div></div>
+
+					<!--Menu Hamburguer -->
+        <button class="navbar-toggler bg-warning  m-3   " data-toggle="collapse" data-target="#navegacao">
+            <span class="navbar-toggler-icon  "></span>
+        </button>
+
+
+        <!--Navegação -->
+        <div class="collapse navbar-collapse  pb-0 pt-0 m-5 " id="navegacao" >
+            <ul class="navbar-nav m-5 " >
+                <li class="nav-item pb-2 ">
+                    <a href="" class="nav-link btn btn-warning text-dark mr-4 ">Home</a>
+                </li>
+                <li class="nav-item pb-2 ">
+                    <a href="" class="nav-link  btn btn-warning text-dark mr-4">Nossas Soluções</a>
+                </li>
+                
+                <li class="nav-item pb-2">
+                    <a href="" class="nav-link  btn btn-warning text-dark mr-4">Sobre a Antherus</a>
+                </li>
+                <li class="nav-item pb-2 ">
+                    <a href="" class="nav-link  btn btn-warning text-dark mr-4">Atendimento</a>
+                </li>
+            </ul>
+        </div>
+        <!--Final Navegação -->
+				</nav>	
+			</div>
+		</div>
+		<!-- Fim do Container -->
+		<div class=" row mt-0 ml-5 mb-5 " style="border:1px solid black;">
+			
+			
+			<form class="form ml-5 pl-5 mt-5  col-5 d-none d-sm-block" >
+				<p><label for="id_whatsapp">WhatsApp</label> <input class="col-12" type="text" name="whatsapp" maxlength="9" required id="id_whatsapp" placeholder="Informe seu numero de contato"> </p>
+				<p><label for="email">Seu melhor e-mail<input class="col-12" type="" name="email" placeholder="Seu melhor e-mail"></label></p>
+				<p><label>Qual seu tipo de Negócio<input class="col-12" type="" name="" placeholder="Qual tipo do seu negocio ?"></label></p>
+				<p><label>Nome para Contato<input class="col-12" type="" name="" placeholder="Qual seu nome ?"></label></p>
+				<div>
+  					<input type="checkbox" id="" name="" checked><span class="ml-2">Declara que aceita contato de nossa equipe de consultores.</span>
+  					<label for=""></label>
+  				</div>
+				<div class="btn btn-warning col-12 mt-5"  type="submit" name="enviar">Enviar</div>
+				
+			</form>
+
+			<form class="form-responsivo ml-5  mt-5 mb-5    d-block d-sm-none" >
+				<p><label for="id_whatsapp">WhatsApp</label> <input class="col-12 form-input" type="text" name="whatsapp" maxlength="9" required id="id_whatsapp" placeholder="Informe seu numero de contato"> </p>
+				<p><label for="email">Seu melhor e-mail<input class="col-12 form-input" type="" name="email"  placeholder="Seu melhor e-mail"></label></p>
+				<p><label>Qual seu tipo de Negócio<input class="col-12 form-input" type="" name=""  placeholder="Qual tipo do seu negocio ?"></label></p>
+				<p><label>Nome para Contato<input class="col-12 form-input" type="" name=""  placeholder="Qual seu nome ?"></label></p>
+				<div>
+  					<input type="checkbox" id="" name="" checked><span class="ml-2">Declara que aceita contato de nossa equipe de consultores.</span>
+  					<label for=""></label>
+  				</div>
+				<div class="btn btn-warning col-12 mt-2 mb-5"  type="submit" name="enviar">Enviar</div>
+				
+			</form>
+		</div>
+				
+		</div>
+		
+
+	
+	<footer class="footer col-12" >
+			<div class="bg-warning text-center text-dark  ">
+				<div class="col-12 ml-0 ">
+				<span ></span>
+				<span class="col-4 mr-0 ml-0 " ><i class="fab fa-whatsapp-square " id="whatsapp-color"></i>16 99337 - 9492</span>
+					<span class="col-4 ml-3 mr-2"  >
+		          <!-- Link Instagram -->
+		          <i class="fab fa-instagram   "  id="insta" aria-hidden="true"></i><span class=" m-1">@antherus</span>
+	          	</span>
+
+		          <span  class="col-4 mr-1 ml-5"  >
+		            	<!-- Link Facebook -->
+		          		<i class="fab fa-facebook-square" id="fb-color"></i><span class=" m-1">/antherus</span>
+		          </span>
+					
+				</div>
+				
+			</div>
+		</footer>
+		
+
+	
+
+
+
+
+
+
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+</html>
