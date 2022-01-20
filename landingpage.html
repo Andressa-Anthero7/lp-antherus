@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+	<!-- Bootstrap-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	<!-- Fontawesome CSS -->
+    <script src="https://kit.fontawesome.com/a69cec9c91.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" />
+
+	<title>Antherus</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+
+
+		.jewel{
+			background-color: #4717f6;
+		}
+
+		.stark{
+			color: #e7dfdd;
+		}
+
+		.fuschia{
+			background: #a239ca;
+		}
+
+		.azul{
+			background: #17ead9;
+		}
+
+		#bg-icon{
+			background-color: #0E0816;
+		}
+
+		.void{
+			background-color: #0e0816;
+		}
+
+		#bg-display{
+			background-image: url(img/bg-degrade.gif);
+		}
+
+		#bg-terra{
+			background-image: url(fundo-terra.gif);
+		}
+
+
+		#insta {
+                background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 0%, #fd5949 20%, #d6249f 60%, #285AEB 90%);
+                -webkit-background-clip: text;
+                /* Also define standard property for compatibility */
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+  
+               
+
+                border-color: black;
+  
+            }
+
+        #whatsapp-color{
+        	color: #34af23;
+        }
+
+        #fb-color{
+        	color: #3b5998;
+        }
+
+        #rodape{
+        	font-size: 2em;
+        }
+
+        .form{
+        	position: relative;
+		   top: 250px;
+		   right:100px;
+		   color: white;
+	   }
+
+	   .form-responsivo{
+	   		position: absolute;
+		   top: 350px;
+		   right:100px;
+		   color: white;  
+	   }
+
+	   .form-responsivo-xs{
+	   		position: absolute;
+		   top: 0px;
+		   right:10px;
+		   bottom: 0px;
+		   color: white;  
+	   }
+
+
+
+	   .form-input{
+	   	font-style:heavy;
+	   	color: black;
+	   	text-align: center;
+	   }
+
+	   .footer{
+	   	position: absolute;
+	   	top:1500px;
+	   }
+
+	   
+	   
+
+	   label{
+	   	display: block;
+	   	font-style: bold;
+	   }
+
+	   @media (min-width: 420px) {
+    		body {
+    			height:1200px;
+    			background: #0e0816;
+        		background-image: url(fundo-terra6.gif);
+        		background-repeat:no-repeat;
+        		background-size: cover;
+    		}
+
+    		footer{
+    			font-size: 2em;
+    		}
+		}
+
+		@media (max-width: 420px) {
+    		body {
+    			height:1000px;
+    			background: #0e0816;
+        		background-image: url(fundo-terra6.gif);
+        		background-repeat:no-repeat;
+        		background-size: cover;
+    		}
+
+
+		}
+
+		input{
+			height: 60px;
+			font-size: 1.5em;
+			font-weight: 900;
+			color: black;
+
+			margin:0 12px 0 0;
+			  vertical-align: middle;
+			  position: relative;
+			  top: -1px;
+		}
+
+		
+
+
+
+
+		#overlay {
+		    position: absolute;
+		    left: 120;
+		    top: 100;
+		    background:white;
+		    background:rgba(0,0,0,0.3);
+		    padding:40px;
+		    border-radius: 10px;
+		    filter:blur(-5px);
+		    -o-filter:blur(-5px);
+		    -ms-filter:blur(-5px);
+		    -moz-filter:blur(-5px);
+		    -webkit-filter:blur(-5px);
+		}
+
+		#overlay-xs {
+		    position: relative;
+		    width:99%;
+		    margin: auto;
+		    background:white;
+		    background:rgba(0,0,0,0.3);
+		    border-radius: 10px;
+		    filter:blur(-5px);
+		    -o-filter:blur(-5px);
+		    -ms-filter:blur(-5px);
+		    -moz-filter:blur(-5px);
+		    -webkit-filter:blur(-5px);
+		}
+
+		#overlay-index {
+		    position: relative;
+		    width:99%;
+		    margin: auto;
+		    background:black;
+		    background:rgba(0,0,0,0.5);
+		    border-radius: 10px;
+		    filter:blur(-5px);
+		    -o-filter:blur(-5px);
+		    -ms-filter:blur(-5px);
+		    -moz-filter:blur(-5px);
+		    -webkit-filter:blur(-5px);
+		}
+
+		#logo-responsivo{
+			max-width: 500px;
+		}
+
+
+	</style>
+</head>
+<body  >
+	<div  class="row container-fluid" >
+		<header>
+		
+			<! -- Barra de navegação -->
+				<nav class="navbar  navbar-dark px-0 py-2 ">
+
+
+					<!--Logo Marca Acima de XS-->
+					<div class="navbar-brand  px-5 ml-3 pb-1  d-none d-sm-block " >
+						<img src="logo11.png" class="mx-auto p-0   "  >1
+					</div>
+
+					<!--Logo Marca Responsivo XS-->
+					<div class="navbar-brand d-block d-sm-none p-0 m-0 " >
+						<img src="logo8.png" class="  img img-fluid "  >2
+					</div>
+
+		
+
+				
+
+        <!--Navegação -->
+        
+        <!--Final Navegação -->
+				</nav>	
+			
+		</header>
+
+		
+		<!--formularios -->
+		<div class=" row mt-0 ml-5  " >
+				
+
+			
+			<form class="form ml-5 pl-5 mt-2 mb-5 d-none d-sm-block" id="overlay" >
+				<div class="m-0 p-o">
+				 <div class="m-3 px-5">
+       				<h1 class="text-center text-white m-5 p-3">Preencha o Formulário<br>ou<br></h1>
+		       </div>
+		       </div>
+		
+				<p><label for="id_whatsapp">WhatsApp1</label> <input class="col-12 display-5" type="text" name="whatsapp" maxlength="9" required id="id_whatsapp" placeholder="Informe seu numero de contato"> </p>
+				<p><label for="email">Seu melhor e-mail<input class="col-12" type="" name="email" placeholder="Seu melhor e-mail"></label></p>
+				<p><label>Qual seu tipo de Negócio<input class="col-12" type="" name="" placeholder="Qual tipo do seu negocio ?"></label></p>
+				<p><label>Nome para Contato<input class="col-12" type="" name="" placeholder="Qual seu nome ?"></label></p>
+				
+  					<p class="m-5 " style="font-size:2em;"><input class="col-1 " type="checkbox" id="" name="" checked mt-3 >Declara que aceita contato de nossa equipe de consultores.</p>
+  					
+  				
+				<div class="btn btn-warning btn-block col-12 mt-5 p-4 " style="font-size:2em;"  type="submit" name="enviar">Enviar</div>
+				
+			</form>
+
+			
+
+			</div>
+		</div>
+
+		<footer class="footer col-12 d-none d-lg-block bg-warning" >
+			
+			
+				
+			<i class="fab fa-whatsapp-square   " id="whatsapp-color"></i>16 99337 - 9492</div>
+			<i class="fab fa-instagram   "  id="insta" aria-hidden="true"></i>@antherus
+	        <i class="fab fa-facebook-square  " id="fb-color">/antherus</i>
+					
+		
+				
+			
+			</footer>
+				
+		
+	
+
+	
+		
+
+
+		
+		
+			
+				
+			
+		
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+</html>

@@ -82,17 +82,26 @@
         .form{
         	position: absolute;
 		   top: 150px;
-		   right:200px;
+		   right:100px;
 		   color: white;
 	   }
 
 	   .form-responsivo{
 	   		position: absolute;
-		   top: 100px;
+		   top: 300px;
 		   right:100px;
-		   
 		   color: white;  
 	   }
+
+	   .form-responsivo-xs{
+	   		position: absolute;
+		   top: 0px;
+		   right:10px;
+		   bottom: 0px;
+		   color: white;  
+	   }
+
+
 
 	   .form-input{
 	   	font-style:heavy;
@@ -102,145 +111,367 @@
 
 	   .footer{
 	   	position: absolute;
-	   	bottom: -200px;
-
+	   	bottom:auto;
 	   }
+
+	   .footer-responsivo{
+	   	position: absolute;
+	   top: auto;
+	   }
+	   
 
 	   label{
 	   	display: block;
 	   	font-style: bold;
 	   }
 
-	   @media (max-width: 600px) {
+	   @media (min-width: 420px) {
     		body {
-        		background-image: url(fundo-terra-responsivo4.gif);
+    			height:1000%;
+    			background: #0e0816;
+        		background-image: url(fundo-terra6.gif);
+        		background-repeat:no-repeat;
+        		background-size: cover;
+    		}
+
+    		footer{
+    			font-size: 2em;
     		}
 		}
 
-		@media (min-width: 600px) {
+		@media (max-width: 420px) {
     		body {
-        		background-image: url(fundo-terra-responsivo4.gif);
-			background-repeat: repeat-x;
-
+    			height:1000px;
+    			background: #0e0816;
+        		background-image: url(fundo-terra6.gif);
+        		background-repeat:no-repeat;
+        		background-size: cover;
     		}
+
+
+		}
+
+		
+
+
+
+
+		#overlay {
+		    position: absolute;
+		    left: 120;
+		    top: 100;
+		    background:white;
+		    background:rgba(0,0,0,0.3);
+		    padding:40px;
+		    border-radius: 10px;
+		    filter:blur(-5px);
+		    -o-filter:blur(-5px);
+		    -ms-filter:blur(-5px);
+		    -moz-filter:blur(-5px);
+		    -webkit-filter:blur(-5px);
+		}
+
+		#overlay-xs {
+		    position: relative;
+		    width:99%;
+		    margin: auto;
+		    background:white;
+		    background:rgba(0,0,0,0.3);
+		    border-radius: 10px;
+		    filter:blur(-5px);
+		    -o-filter:blur(-5px);
+		    -ms-filter:blur(-5px);
+		    -moz-filter:blur(-5px);
+		    -webkit-filter:blur(-5px);
+		}
+
+		#overlay-index {
+		    position: relative;
+		    width:99%;
+		    margin: auto;
+		    background:black;
+		    background:rgba(0,0,0,0.5);
+		    border-radius: 10px;
+		    filter:blur(-5px);
+		    -o-filter:blur(-5px);
+		    -ms-filter:blur(-5px);
+		    -moz-filter:blur(-5px);
+		    -webkit-filter:blur(-5px);
+		}
+
+		#logo-responsivo{
+			max-width: 500px;
 		}
 
 
 	</style>
 </head>
-<body class=" w-auto " style="width:100%; " id="">
+<body style="style=min-width: 500px;" >
 	<div  class="row container-fluid" >
-		<div class="">
-			<div class="">
-
+		<header class="m-0 p-0 " style="border: 1px solid red; " >
+		
 			<! -- Barra de navegação -->
-				<nav class="navbar navbar-expand-lg navbar-dark px-0 py-2 ">
+				<nav class="navbar navbar-expand-md navbar-dark px-0 py-2">
 
 
 					<!--Logo Marca Acima de XS-->
-					<div class="navbar-brand  px-5 ml-3 pb-1  d-none d-sm-block " >
+					<div class="navbar-brand  px-5 ml-0 pb-1 mr-0  d-none d-sm-block " >
 						<img src="logo8.png" class="mx-auto p-0   "  >
 					</div>
 
-					<!--Logo Marca Responsivo XS-->
-					<div class="navbar-brand d-block d-sm-none p-0 m-0 " >
-						<img src="logo8.png" class="  img img-fluid "  >
+					<!-- Logo Marca XS-->
+
+					<div class="navbar-brand    d-block d-sm-none " id="logo-responsivo" >
+						<img src="logo8.png" class="   "  >
 					</div>
 
-		<div></div>
+					
+
+		
 
 					<!--Menu Hamburguer -->
-        <button class="navbar-toggler bg-warning  m-3   " data-toggle="collapse" data-target="#navegacao">
-            <span class="navbar-toggler-icon  "></span>
+        <button class="navbar-toggler bg-warning ml-5 m-5 p-3 col-6 " data-toggle="collapse" data-target="#navegacao">
+            <span class="navbar-toggler-icon  mx-5 p-3"></span>
         </button>
 
 
         <!--Navegação -->
-        <div class="collapse navbar-collapse  pb-0 pt-0 m-5 " id="navegacao" >
-            <ul class="navbar-nav m-5 " >
-                <li class="nav-item pb-2 ">
-                    <a href="" class="nav-link btn btn-warning text-dark mr-4 ">Home</a>
+        <div class="collapse navbar-collapse  pb-0 pt-0 ml-5 d-md-none d-lg-block  " id="navegacao" >
+            <ul class="navbar-nav m-0 p-0 " >
+                <li class="nav-item pb-2 pl-1 col-12 col-sm-6 ml-3 ">
+                    <a href="" class="nav-link btn btn-warning text-dark  font-weight-bold">Home</a>
                 </li>
-                <li class="nav-item pb-2 ">
-                    <a href="" class="nav-link  btn btn-warning text-dark mr-4">Nossas Soluções</a>
+                <li class="nav-item pb-2 pl-1 col-12  col-sm-6 ml-3">
+                    <a href="" class="nav-link  btn btn-warning text-dark  font-weight-bold">Nossas Soluções</a>
                 </li>
                 
-                <li class="nav-item pb-2">
-                    <a href="" class="nav-link  btn btn-warning text-dark mr-4">Sobre a Antherus</a>
+                <li class="nav-item pb-2 pl-1 col-12  col-sm-6 ml-3">
+                    <a href="" class="nav-link  btn btn-warning text-dark font-weight-bold">Sobre a Antherus</a>
                 </li>
-                <li class="nav-item pb-2 ">
-                    <a href="" class="nav-link  btn btn-warning text-dark mr-4">Atendimento</a>
-                </li>
+                
             </ul>
         </div>
         <!--Final Navegação -->
+
+        
+        <!--Final Navegação -->
 				</nav>	
-			</div>
-		</div>
-		<!-- Fim do Container -->
-		<div class=" row mt-0 ml-5 mb-5 " style="border:1px solid black;">
 			
-			
-			<form class="form ml-5 pl-5 mt-5  col-5 d-none d-sm-block" >
-				<p><label for="id_whatsapp">WhatsApp</label> <input class="col-12" type="text" name="whatsapp" maxlength="9" required id="id_whatsapp" placeholder="Informe seu numero de contato"> </p>
-				<p><label for="email">Seu melhor e-mail<input class="col-12" type="" name="email" placeholder="Seu melhor e-mail"></label></p>
-				<p><label>Qual seu tipo de Negócio<input class="col-12" type="" name="" placeholder="Qual tipo do seu negocio ?"></label></p>
-				<p><label>Nome para Contato<input class="col-12" type="" name="" placeholder="Qual seu nome ?"></label></p>
-				<div>
-  					<input type="checkbox" id="" name="" checked><span class="ml-2">Declara que aceita contato de nossa equipe de consultores.</span>
-  					<label for=""></label>
-  				</div>
-				<div class="btn btn-warning col-12 mt-5"  type="submit" name="enviar">Enviar</div>
-				
-			</form>
+		</header>
+		
+		<!--Conteudo Principal -->
+		<main class=" row mt-0 p-0  " style="border: 1px solid white;"  >
+			<!-- Display responsivo Acima de XS-->
+    		<div class=" d-sm-none d-md-block  p-0 m-5 " style="border:1px solid yellow;" >
+			    	<!--Cards do Display-->
+					<div class="card-columns row m-0 p-0 px-1  " style="border: 1px solid white;" >
+						<div class="card col-12  mx-0 mt-0 pt-0" id="overlay-index">
+			      
+				      <!--Display -->
+				      <!-- Card 1-->
+				       <h1 class="card-title m-4  text-center text-white"> B Construimos sua Web Pages</h1>
+				       <h2 class="card-text  text-center text-white text-justify my-5 p-1">Muito mais do que página.<br></h2>
 
-			<form class="form-responsivo ml-5  mt-5 mb-5    d-block d-sm-none" >
-				<p><label for="id_whatsapp">WhatsApp</label> <input class="col-12 form-input" type="text" name="whatsapp" maxlength="9" required id="id_whatsapp" placeholder="Informe seu numero de contato"> </p>
-				<p><label for="email">Seu melhor e-mail<input class="col-12 form-input" type="" name="email"  placeholder="Seu melhor e-mail"></label></p>
-				<p><label>Qual seu tipo de Negócio<input class="col-12 form-input" type="" name=""  placeholder="Qual tipo do seu negocio ?"></label></p>
-				<p><label>Nome para Contato<input class="col-12 form-input" type="" name=""  placeholder="Qual seu nome ?"></label></p>
-				<div>
-  					<input type="checkbox" id="" name="" checked><span class="ml-2">Declara que aceita contato de nossa equipe de consultores.</span>
-  					<label for=""></label>
-  				</div>
-				<div class="btn btn-warning col-12 mt-2 mb-5"  type="submit" name="enviar">Enviar</div>
-				
-			</form>
-		</div>
-				
-		</div>
+						<p  class="text-center text-white text-justify text-bold m-1 pt-2 shadow-lg p-3 mb-5 bg-black rounded  " style="font-size: 1.5em;">Construimos páginas profissionais com designer responsivo que se adapta a maioria dos dispositivos.<br>Dispositivo como Tablet, Celulares de diverso tamanhos, Notebook e até SmartTV <br>
+						<br>
+						<img class="card-img-center p-2" src="{{anuncio.imagem.url}}">
+
+						<h1 class="card-text  text-center text-white text-justify my-2 ">A Page certa está aqui</h1>
+						<p class="text-center text-white text-justify text-bold m-2 pt-2 shadow-lg p-3 mb-5 bg-black rounded  " style="font-size:1.5em;">
+						Página de vendas<br>Landing Page<br>Hot Page<br> One-Page<br> Institucional!<br></p>
+
+						<p class="text-center text-white text-justify text-bold  shadow-lg bg-black rounded  " style="font-size:1.5em;">Aqui temos as melhores soluções para sua marca e sua empresa ter presença na internet e alcançar grandes resultados.
+						<br>
+						</p>
+
+						
+					</p>
+				      
+				      <div>
+				       <a  class="btn btn-primary btn-sm float-right mx-3 mb-3 d-inline"  href="">Saiba mais</a>
+				       </div>
+				       <!-- FINAL DO CARD -->
+
+
+
+				       <!-- CARD 2-->
+				      
+				      <h1 class="card-title m-5 p-5  text-center text-white">Gestão de Midias Sociais</h1>
+				       <h3 class="card-text  text-center text-white text-justify my-3 p-1">Muito mais do que fazer post no Facebook ou Instagram!!<br></h3>
+				       <img class="card-img-center p-2" src="{{anuncio.imagem.url}}">
+
+						<p  class="text-center text-white text-justify text-bold m-2 pt-2 shadow-lg  mb-5 bg-black rounded  " style="font-size: 1.5em;">Elaboramos o designer adicionando personalidade e identidade visual a sua marca ou produto.<br>
+						Geramos uma persona a marca ou produto para aproximar e engajar. <br>
+						Afinal pessoas engajadas que consomem uma idéia!!!<br> Possivelmente consomem o produto!!<br><br>
+
+						Editamos fotos e vídeos para se ajustar perfeitamente nos tamanhos de post no  instagram, facebook , youtube e muitos mais <br>
+
+						Formatamos o público alvo utilizando ferramentas de captação de leads e monitoramento. <br>
+						Gerando Leads sobre quem é sua audiência e qual interesse, nível de engajamento com sua marca ou produtos.<br><br>
+
+						Clientes engajados compram, indicam, fazem avaliações positivas, gerando um ciclo de comunicação e bons negócios  entre comunidade, marca, empresa ou produto.<br>
+
+						Cuidamos de tudo para você focar no que interessa!!!<br>
+
+						Transformar as mídias sociais na sua vitrine de vendas e faturar muito!!!!!
+					</p>
+				      
+				      <div>
+				       <a  class="btn btn-primary btn-sm float-right mx-3 mb-3 d-inline"  href="">Saiba mais</a>
+				       </div>
+				       <!-- Final do Card-->
+				       <div class="m-3 p-5"></div>
+
+				       <!-- CARD 3-->
+				      
+				      <h1 class="card-title m-5  text-center text-white">Elaboração de Conteúdo</h1>
+				       <h3 class="card-text  text-center text-white text-justify my-5 p-1">Muito mais do simplesmente postar nas redes sociais!!<br></h3>
+				       <img class="card-img-center p-2" src="{{anuncio.imagem.url}}">
+
+						<p  class="text-center text-white text-justify text-bold m-2  shadow-lg p-3 mb-5 bg-black rounded  " style="font-size: 1.5em;">Fazemos o designer gráfico com sua marca e identidade visual nas postagens.<br>
+
+							Analise as tendências e o mercado para achar oportunidades de insights para sua empresa ou sua marca.<br>
+						<p class="text-center text-white text-justify text-bold m-2  shadow-lg p-3 mb-5 bg-black rounded  " style="font-size: 1.5em;">
+							Anuncios, ações de vendas, ações de marketing,
+						</p>
+
+					</p>
+				      
+				      <div>
+				       <a  class="btn btn-primary btn-sm float-right mx-3 mb-3 d-inline"  href="">Saiba mais</a>
+				       </div>
+				       <!-- Final do Card-->
+				     <div class="m-5 p-3"></div>
+				       
+				      	</div>
+
+				       <div class="col-1"></div>
+				      
+
+
+				     
+				      
+	    			</div><!--Fim Colunas -->
+			</div>
+
+
+
+
+
+
+
+
+    <!--Display Responsivo XS-->
+    <div class="  col-12 " >
+
+    					<!--Display  -->
+				      <div class="card col-sm-7  m-0 d-block d-sm-none d-none d-sm-block d-md-none " id="overlay-index"  >
+				      <h1 class="card-title mt-5  text-center text-white" style="font-size: 2.5em;">Construimos sua Web Pages</h1>
+				       <h3 class="card-text  text-center text-white text-justify mt-5 mb-0 px-5" style="font-size: 2em;">Muito mais do que página.<br></h3>
+
+						<p  class="text-center text-white text-justify text-bold  shadow-lg  bg-black rounded mt-0 m-5 px-1 py-5 " style="font-size: 2em;">Construimos páginas profissionais com designer responsivo que se adapta a maioria dos dispositivos.<br>Dispositivo como Tablet, Celulares de diverso tamanhos, Notebook e até SmartTV <br>
+				      <img class="card-img-center p-2" src="{{anuncio.imagem.url}}">
+				      <div>
+				       <a  class="btn btn-primary btn-sm float-right mx-3 mb-3 d-inline"  href="">Saiba mais</a>
+				       </div>
+				      	
+				       <div class="col-1"></div>
+				       <!--Final Display-->
+
+				       <!--Display  -->
+				     
+				      <h1 class="card-title mt-5  text-center text-white" style="font-size: 4em;"> Gestão de Midias Sociais</h1>
+				       <h3 class="card-text  text-center text-white text-justify mt-5 mb-0 px-5" style="font-size: 2.5em;"><br></h3>
+
+						<p  class="text-center text-white text-justify text-bold  shadow-lg  bg-black rounded mt-0 m-5 px-1 py-5 " style="font-size: 2em;">Elaboramos o designer adicionando personalidade e identidade visual.
+						Geramos uma persona a marca ou produto para aproximar e engajar. <br>
+						Afinal pessoas engajadas que consomem uma idéia e possivelmente consomem o produto!!<br>
+
+						Editamos fotos e vídeos para se ajustar perfeitamente nos tamanhos de post , instagram, reels , youtube e muito mais <br>
+
+						Formatamos o público alvo, ferramentas de captação de leads e monitoramento. 
+						Gerando Leads sobre quem é sua audiência e qual interesse, nível e engajamento com sua marca ou produtos.<br>
+
+						Clientes engajados compram, indicam, fazem avaliações positivas, gerando um ciclo de comunicação e bons negócios  entre comunidade, marca, empresa ou produto.<br>
+
+						Cuidamos de tudo para você focar no que interessa!!!<br>
+
+						Transformar as mídias sociais na sua vitrine de vendas e faturar muito!!!!!
+					</p>
+				      <img class="card-img-center p-2" src="{{anuncio.imagem.url}}">
+				      <div>
+				       <a  class="btn btn-primary btn-sm float-right mx-3 mb-3 d-inline"  href="">Saiba mais</a>
+				       </div>
+				      
+				       <div class="col-1"></div>
+				       <!--Final Display-->
 		
 
-	
-	<footer class="footer col-12" >
-			<div class="bg-warning text-center text-dark  ">
-				<div class="col-12 ml-0 ">
-				<span ></span>
-				<span class="col-4 mr-0 ml-0 " ><i class="fab fa-whatsapp-square " id="whatsapp-color"></i>16 99337 - 9492</span>
-					<span class="col-4 ml-3 mr-2"  >
-		          <!-- Link Instagram -->
-		          <i class="fab fa-instagram   "  id="insta" aria-hidden="true"></i><span class=" m-1">@antherus</span>
-	          	</span>
+				      <!--Display  -->
+				      
+				      <h1 class="card-title mt-5  text-center text-white" style="font-size: 4em;"> Elaboração de Conteúdo</h1>
+				       <h3 class="card-text  text-center text-white text-justify mt-5 mb-0 px-5" style="font-size: 2.5em;">Muito mais do que fazer post no Facebook ou Instagram!!<br></h3>
 
-		          <span  class="col-4 mr-1 ml-5"  >
-		            	<!-- Link Facebook -->
-		          		<i class="fab fa-facebook-square" id="fb-color"></i><span class=" m-1">/antherus</span>
-		          </span>
+						<p  class="text-center text-white text-justify text-bold  shadow-lg  bg-black rounded mt-0 m-5 px-1 py-5 " style="font-size: 2em;">Elaboramos o designer adicionando personalidade e identidade visual.
+						Geramos uma persona a marca ou produto para aproximar e engajar. <br>
+						Afinal pessoas engajadas que consomem uma idéia e possivelmente consomem o produto!!<br>
+
+						Editamos fotos e vídeos para se ajustar perfeitamente nos tamanhos de post , instagram, reels , youtube e muito mais <br>
+
+						Formatamos o público alvo, ferramentas de captação de leads e monitoramento. 
+						Gerando Leads sobre quem é sua audiência e qual interesse, nível e engajamento com sua marca ou produtos.<br>
+
+						Clientes engajados compram, indicam, fazem avaliações positivas, gerando um ciclo de comunicação e bons negócios  entre comunidade, marca, empresa ou produto.<br>
+
+						Cuidamos de tudo para você focar no que interessa!!!<br>
+
+						Transformar as mídias sociais na sua vitrine de vendas e faturar muito!!!!!
+					</p>
+				      <img class="card-img-center p-2" src="{{anuncio.imagem.url}}">
+				      <div>
+				       <a  class="btn btn-primary btn-sm float-right mx-3 mb-3 d-inline"  href="">Saiba mais</a>
+				       
+				      	</div>
+				       <div class="col-1"></div>
+				       <!--Final Display-->
+      
+    </div><!--Fim Colunas -->
+				
+			
+			
+			
+				
+
+		</main>
+
+			
+		</div>
+		<!-- Fim do Container-->
+				
+		
+	
+
+	
+		<footer class="footer col-12 d-none d-sm-block bg-warning" >
+			
+			
+				
+			<i class="fab fa-whatsapp-square m-1 " id="whatsapp-color"></i>16 99337 - 9492</div>
+			<i class="fab fa-instagram m-1  "  id="insta" aria-hidden="true"></i>@antherus
+	        <i class="fab fa-facebook-square ml-2" id="fb-color">/antherus</i>
 					
-				</div>
-				
-			</div>
-		</footer>
 		
+				
+			
+		</footer>
 
-	
-
-
-
-
-
-
-
+		
+		<!-- Footer Responsivo -->
+		
+			
+				
+			
+		
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
